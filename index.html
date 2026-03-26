@@ -1,4 +1,100 @@
-<body style="background:#4b0082; color:white; text-align:center; padding-top:100px; font-family:sans-serif;">
-    <h1>🚧 Sitio en Mantenimiento 🚧</h1>
-    <p>Rommel está trabajando en nuevas funciones increíbles. ¡Vuelve pronto!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Alex</title>
+    <link rel="stylesheet" href="r.css">
+</head>
+<body>
+<button id="boton-color" class="btn-switch">🌙 / ☀️</button>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>Alex</h1> 
+            <img src="chibi.jpg" alt="profile" width="60px">
+        </div>
+        <nav>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+        </nav>
+    </header>
+
+    <main> 
+        <section class="about">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Alex. Tengo 17 años y estoy en mi último año de secundaria de Informática. 
+               Me apasiona la informática y el desarrollo de software. En mi tiempo libre 
+               disfruto de la programación y los videojuegos.</p>
+        </section>
+
+        <section class="habilidades-container">
+            <div class="habilidad">Python</div>
+            <div class="habilidad">HTML</div>
+            <div class="habilidad">CSS</div>
+        </section>
+
+        <section class="experiencia">
+            <div class="contenedor-tabla"> 
+                <table>
+                    <thead> 
+                        <tr>
+                            <th>Año</th>
+                            <th>Institución</th>
+                            <th>Logros</th>
+                        </tr>
+                    </thead>    
+                    <tbody>
+                        <tr>
+                            <td>2026</td>
+                            <td>GOV</td>
+                            <td>Atención al cliente</td>
+                        </tr>
+                        <tr>
+                            <td>2025</td>
+                            <td>XX</td>
+                            <td>Proyectos Técnicos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="contacto">
+            <button class="btn-contacto">Enviar Mensaje</button>
+            <section class="contacto">
+    <h2>Envíame un mensaje</h2>
+    <form action="https://formspree.io/f/xaqlwbqq" method="POST" class="formulario">
+        <div class="input-group">
+            <label>Nombre:</label>
+            <input type="text" name="name" placeholder="Tu nombre" required>
+        </div>
+        
+        <div class="input-group">
+            <label>Correo:</label>
+            <input type="email" name="_replyto" placeholder="tu@correo.com" required>
+        </div>
+        
+        <div class="input-group">
+            <label>Mensaje:</label>
+            <textarea name="message" placeholder="¿En qué puedo ayudarte?" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn-contacto">Enviar Mensaje</button>
+    </form>
+</section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - Programado por Alex</p>
+    </footer>
+<script>
+    const boton = document.getElementById('boton-color');
+    boton.addEventListener('click', () => {
+        document.body.classList.toggle('modo-claro');
+    });
+</script>
 </body>
+</html>
